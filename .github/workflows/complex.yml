@@ -7,10 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: date
+    - run: env | sort
   windows:
     runs-on: windows-latest
     steps:
     - run: date
+    - run: "Get-ChildItem Env: | Sort-Object Name"
   macos:
     runs-on: macos-latest
     steps:
