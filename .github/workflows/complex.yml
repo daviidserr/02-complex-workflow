@@ -1,6 +1,9 @@
 name: Complex
 
-on: push
+on: 
+  push:
+  schedule:
+    - cron: '45 12 * * *'
 
 jobs:
   ubuntu:
