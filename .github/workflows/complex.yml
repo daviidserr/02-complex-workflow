@@ -3,7 +3,7 @@ name: Complex
 on: 
   push:
   schedule:
-    - cron: '45 12 * * *'
+    - cron: '15 19 * * *'
 
 jobs:
   ubuntu:
